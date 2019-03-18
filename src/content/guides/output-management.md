@@ -210,6 +210,7 @@ __webpack.config.js__
       print: './src/print.js'
     },
     plugins: [
+    // new CleanWebpackPlugin(['dist/*']) 对于版本 < v2 的 CleanWebpackPlugin
 +     new CleanWebpackPlugin(['dist']),
       new HtmlWebpackPlugin({
         title: 'Output Management'
